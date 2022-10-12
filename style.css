@@ -121,13 +121,11 @@ p {
 
 h2 {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     font-weight: bolder;
-    color: #1F2937;
-    font-size: 36px;
-    margin-top: 35px;
-    text-align: center;
+    color: black;
+    font-size: 30px;
 }
 
 .secondcontainer{
@@ -138,10 +136,10 @@ h2 {
     justify-content: space-around;
 }
 
-.numbertwo{
+/*.numbertwo{
     padding: 90px;
     flex-wrap: wrap;
-}
+}*/
 
 .boxes{
     display: block;
