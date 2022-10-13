@@ -39,7 +39,6 @@ body {
     justify-content: flex-start;
     align-items: flex-end;
     flex-shrink: 0;
-    
 }
 
 img {
@@ -56,7 +55,7 @@ p {
     
 }
 
-.rightbar{
+.rightbar {
     gap: 2px;
     justify-content: flex-start;
     align-items: center;
@@ -64,37 +63,67 @@ p {
     color: black;
     display: flex;
     flex-direction: column;
+    position:relative;
 }
+
+.edu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 16px
+  }
+
+.boxes{
+    display: flex;
+    /*max-width: 150px;
+    /*background-image: linear-gradient(180deg, #003333, rgba(0, 0, 0, 0));
+    background-color: white;*/
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    gap: 20px;
+    justify-content: space-around;
+}
+    /*justify-content: center;
+    align-items: center;
+    flex-shrink: 0;*/
+
+/*.boxes{
+        display: flex;
+        max-width: 150px;
+        background-image: linear-gradient(180deg, #003333, rgba(0, 0, 0, 0));
+        background-color: white;
+        width: 144px;
+        height: 144px;
+        border-radius: 20px;
+        margin-bottom: 10px;
+        gap: 20px;
+        justify-content: space-around;
+    }*/
 
 .about {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     background: white;
     color: black;
-    margin-left: 30px;
+    margin: 30px;
     justify-content: flex-start;
     align-items: center;
   }
 
 .nextdiv{
-    display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    gap: 10px;
 }
 
 .profile {
     font-weight: bold;
     font-size: 30px;
-    color: black;
-    margin-top: 10px;
 }
 
 .texttwo {
-    font-size: 17px;
-    flex-wrap: wrap;
-    color: black;
-    margin-right: 30px;
+    font-size: 17px;   
 }
 
 .clickhere {
@@ -121,7 +150,7 @@ h2 {
     margin-left: 30px;
 }
 
-.picture {
+/*.picture {
     background-image:url('/img/beach.jpg');
     width: 950px;
     height: 250px;
@@ -130,16 +159,13 @@ h2 {
     display: flex;
     margin-right: 50px;
     border-radius: 15px;
-}
+}*/
 
 
 
 .secondcontainer{
     display: flex;
-    flex-flow: row wrap;
-    background-color: white;
-    gap: 32px;
-    justify-content: space-around;
+    margin-left: 30px;
 }
 
 /*.numbertwo{
@@ -147,14 +173,7 @@ h2 {
     flex-wrap: wrap;
 }*/
 
-.boxes{
-    display: block;
-    max-width: 150px;
-}
-
-
-
-.pictureone {
+/*.pictureone {
     display: flex;
     flex-direction: row;
     background-color: white;
@@ -208,7 +227,7 @@ h2 {
     align-items: center;
     flex-shrink: 0;
     background-image: linear-gradient(180deg, #003333, rgba(0, 0, 0, 0));
-}
+}*/
 
 
 
@@ -296,14 +315,6 @@ h2 {
   color: white;
   align-items: center;
 }
-
-.edu {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    gap: 16px
-  }
 
 a{
     text-decoration: none;
