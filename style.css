@@ -2,6 +2,7 @@
 
 body {
   height: 100vh;
+  
   margin: 0;
   font-family: Roboto, sans-serif;
   display: flex;
@@ -22,10 +23,11 @@ body {
   padding: 16px;
   background: #009999;
   color: white;
-  gap: 120px;
+  gap: 30px;
+  height: 100vh;
 }
 
-.leftbar{
+/*.leftbar{
     font-weight: bold;
     font-size: 22px;
     color: gray;
@@ -39,7 +41,7 @@ body {
     justify-content: flex-start;
     align-items: flex-end;
     flex-shrink: 0;
-}
+}*/
 
 img {
     width: 150px;
@@ -55,21 +57,26 @@ p {
     
 }
 
+a{
+    text-decoration: none;
+    color: white;
+}
+
 .rightbar {
     gap: 2px;
     justify-content: flex-start;
-    align-items: flex-end;
+    align-items: center;
     font-size: 18px;
     color: black;
     display: flex;
     flex-direction: column;
-    position:relative;
+    
 }
+
 
 .addy {
     display: flex;
     list-style: none;
-    
     gap: 16px;
   }
 
@@ -185,25 +192,38 @@ h2 {
 .fourthcontainer {
     display: flex;
     background: white;
-    margin: 80px;
+    margin: 20px;
     flex-direction: row;
-    padding: 60px;
-    background: #009999;;
-    width: 900px;
-    height: 50px;
+    padding: 50px;
+    background: #009999;
+    width: 500px;
+    height: 70px;
     border-radius: 8px;
     color: white;
     align-items: center;
-    margin-left: 200px;
+    justify-content: center;
+    animation: move-in-steps 8s infinite;
+    display: inline-block;
+    position: relative;
+    
 }
-
-.sep {
+@keyframes move-in-steps {
+    0% {
+      left: 0;
+      background:#009999;
+    }
+    100% {
+      left: 100%;
+      background: rgb(117, 88, 88);
+    }
+  }
+/*.sep {
     justify-content: center;
     align-items: flex-start;
     display: flex;
     flex-direction: column;
     flex: 1;
-}
+}*/
 
 
 .firstquote {
@@ -212,7 +232,7 @@ h2 {
 }
 
 
-.signdown {
+.contactme {
     background: #006666;
     border-radius: 8px;
     border: 2px solid white;
@@ -221,7 +241,7 @@ h2 {
     font-weight: bold;
     font-size: 18px;
     color: white;
-    margin-left: 300px;
+    margin-left: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -237,8 +257,5 @@ h2 {
   align-items: center;
 }
 
-a{
-    text-decoration: none;
-    color: white;
-}
+
 
