@@ -17,6 +17,5 @@ jobs:
 
       - name: Upload files to S3 with AWS CLI
         run: |
-          aws s3 sync _site/ s3://${{ secrets.S3_BUCKET }} 
-        with:
-          args: --acl public-read --follow-symlinks --delete --exclude '.git/*' --exclude '.github/*'
+          aws s3 sync _site/ s3://${{ secrets.S3_BUCKET }} --acl public-read --follow-symlinks --delete --exclude '.git/*' --exclude '.github/*'
+       
