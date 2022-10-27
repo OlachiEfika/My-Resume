@@ -16,5 +16,5 @@ jobs:
 
       - name: Upload files to S3 with AWS CLI
         run: |
-          aws s3 sync . s3://ola-cloud-resume --acl public-read --follow-symlinks --delete --exclude '.git/*' --exclude '.github/*'
+          aws s3 sync . s3://ola-cloud-resume --follow-symlinks --delete --exclude '.git/*' --exclude '.github/*'
        
