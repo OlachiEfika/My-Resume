@@ -11,53 +11,177 @@
     <script src="myscripts.js"></script>
 </head>
 <body>
-    <div class="header">
-        <div id="head">
-            <div class="leftbar">
+    <div class="head">
+        <div class="sidebar">
+          <ul>
+            <li><a href="#"> - link one</a></li>
+            <li><a href="#"> - link two</a></li>
+            <li><a href="#"> - link three</a></li>
+            <li><a href="#"> - link four</a></li>
+          </ul>
+        </div>
+        <div class="container">
+            <div class="headone">
+                <div class="menu">
+                    <button>
+                        <span>
+                            <i></i>
+                        </span>
+                    </button>
+                </div>
+                <h1 class="text">OLACHI EFIKA</h1>
+                <div class="social">
+                    <a href="https://github.com/OlachiEfika" target="_blank"> <i class="fa fa-github fa-2x"></i></a>
+                    <a href="https://www.linkedin.com/in/olachi-efika-65b07627" target="_blank"> <i class="fa fa-linkedin fa-2x"></i></a></i>
+                    <a href="mailto:jenniferefika@outlook.com" target="_blank"> <i class="fa fa-envelope fa-2x"></i></a> 
+                </div>
+                <p class="text">Number of visitors: <span id="visits"></span></p>
+            </div>
+            
+            <div class="card">
+                <div class="profilebar">
+                    <img src="/img/profilepic.jpg" alt="My profile picture">
+                    <p class="text">Hello! I am an aspiring full-stack developer with a passion for cloud technologies.  
+                        I bring a unique combination of skills and work experience with a background in law which has allowed me 
+                        to sharpen my soft skills in communication, analytical and critical thinking, time management and empathy.
+                        I have a passion for learning, solving problems and building solutions with technology.
+                    </p>
+                    <p class="text">My current goals are to learn and seek opportunities in the field of  web development, cloud engineering, and DevOps practices.</p>
+                    <p class="text">This resume website is the result of my learning from The Odin Project and AWS resources, I attempted the <a href="https://cloudresumechallenge.dev/docs/the-challenge/aws/" target="_blank">Cloud Resume Challenge</a></li>. </p>
+                </div></div>
+            <div class="card"><h3>Professional Development Experience</h3>
+                <h3>Cloud Resume Challenge - October 2022</h3>
+                <h4>Amazon S3, Amazon CloudFront, Amazon Route 53, AWS DynamoDB, AWS SAM, AWS API Gateway, AWS ACM Certificate Manager, AWS Lambda, Github, HTML, CSS 
+                </h4>
+                    <ul>
+                        <li>Deployed a HTML/CSS resume as an Amazon S3 static website using the AWS Console</li>
+                        <li>Configured HTTPS security for the website URL using AWS Certificate Manager(ACM) public certificate, Amazon CloudFront and OAI</li>
+                        <li>Mapped the CloudFront distribution to this custom domain name - <a href="resume.olachiefika.com" target="_blank">resume.olachiefika.com</a></li>- from Route 53 using an alias record 
+                        <li>Developed a Javascript snippet to call an API through the AWS API Gateway and a Lambda function to retrieve and update the visitor count in a DynamoDB database </li>
+                        <li>Created a CI/CD workflow through Github Actions to sync files from front and back end local repositories to an S3 bucket after any updates</li>
+                        <li>Defined DynamoDB Table, API Gateway and Lambda function using the AWS SAM template</li>
+                        <li>Troubleshooting and resolving issues in development, test and production instances</li>
+                    </ul></div>
+            <div class="card"><h3>Skills</h3>
+                <h4>Amazon Web Services</h4>
+                    <ul>
+                        <li>Compute: EC2, Lambda, Elastic Beanstalk</li>
+                        <li>Storage: EBS, S3</li>
+                        <li>Database: RDS, DynamoDB</li>
+                        <li>Networking & Content Delivery: VPC, CloudFront, Route 53, API Gateway</li>
+                        <li>Security,Identity, & Compliance: IAM, Cognito</li>
+                        <li>Management & Governance: AWS Organizations, CloudWatch, CloudFormation, Cloud Trial, AWS Config, AWS Systems Manager</li>
+                    </ul></div>
+            <div class="card"><h3>Languages & Web Development tools</h3>
+                <ul>
+                    <li>HTML | CSS | Python | Javascript | Git/Github | Jira |  Linux and Shell Scripting | Amazon Web Services</li>
+                </ul></div>
+            <div class="card"><h3>Volunteering Activities</h3>
+                <ul>
+                    <li>Created a web application to optimize client acquisition and retention for a small business <!--Add Seun's link here--> </li>
+                    <li>Part of the Community Volunteer Income Tax Program specifically assisting newcomers to file tax returns in Canada</li>
+                </ul></div>
+            <div class="card"><h3>Education</h3>
+                <ul>
+                    <li>2022 - The Odin Project - Web Development</li>
+                    <li>2022 - SheBuilds CloudUp Program</li>
+                    <li>2021 - Member of the Law Society of Ontario: Barrister & Solicitor</li>
+                    <li>2020 - Federation of Law Societies Canada: National Committee on Accreditation - Certification of Qualification</li>
+                    <li>2014 - University of Birmingham, UK: LLM, Master of Laws (LLM Project: An Analysis of UK and EU Patent frameworks)</li>
+                    <li>2012 - Member of the Nigerian Bar (Barrister & Solicitor of the Supreme Court of Nigeria)</li>
+                    <li>2012 - Nigerian Law School, Nigeria: BL, Barrister at Law</li>
+                    <li>2010 - Madonna University, Nigeria: LLB, Bachelor of Laws</li>
+                </ul></div>
+            <div class="card"><div class="thirdcontainer">
+                <h2>Certifications</h2>
+                <div class="certs">
+                    <img src="/img/aws-certified-cloud-practitioner-badge.png" alt="My Cloud Practitioner badge">
+                    <img src="/img/aws-cloud-quest-cloud-practitioner.png" alt="My Cloud Quest badge">
+                </div>
+                <div class="firsttext"> “For the things we have to learn before we can do them, we learn by doing them.”</div>
+                <div class="moretext"> - Aristotle!</div>
+            </div></div>
+            <div class="card">
+                <div class="fourthcontainer">
+                    <div class="sep">
+                        <div class="firstquote">Let's connect!</div>
+                        <div class="secondquote"> Contact me by clicking these buttons below.</div>
+                    </div>  
+                    <div class="contactme">
+                        <a href="mailto:jenniferefika@outlook.com" target="_blank"> <i class="fa fa-envelope fa-3x"></i></a> 
+                        <a href="https://github.com/OlachiEfika" target="_blank"> <i class="fa fa-github fa-3x"></i></a>
+                        <a href="https://www.linkedin.com/in/olachi-efika-65b07627" target="_blank"> <i class="fa fa-linkedin fa-3x"></i></a>  
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <p class="text">Copyright © Olachi Efika 2022 </p>
+                <p class="text">Toronto, Ontario | jenniferefika@outlook.com | 905-922-6022</p>
+            </div> 
+        </div>
+      
+    <!--<div class="head">
+        <div class="header">
+            <div class="profilebar">
                 <img src="/img/profilepic.jpg" alt="My profile picture">
-                <p>Hi, 👋 I'm Olachi Efika.</p>
+                <h1 class="text">OLACHI EFIKA</h1>
+                <p class="text">Hello! I am an aspiring full-stack developer with a passion for cloud technologies.  
+                    I bring a unique combination of skills and work experience with a background in law which has allowed me 
+                    to sharpen my soft skills in communication, analytical and critical thinking, time management and empathy.
+                    I have a passion for learning, solving problems and building solutions with technology.
+                </p>
+                <p class="text">My current goals are to learn and seek opportunities in the field of  web development, cloud engineering, and DevOps practices.</p>
+                <p class="text">This resume website is the result of my learning from The Odin Project and AWS resources, I attempted the <a href="https://cloudresumechallenge.dev/docs/the-challenge/aws/" target="_blank">Cloud Resume Challenge</a></li>. </p>
             </div>
             <div class="social">
                 <a href="https://github.com/OlachiEfika" target="_blank"> <i class="fa fa-github fa-2x"></i></a>
                 <a href="https://www.linkedin.com/in/olachi-efika-65b07627" target="_blank"> <i class="fa fa-linkedin fa-2x"></i></a></i>
                 <a href="mailto:jenniferefika@outlook.com" target="_blank"> <i class="fa fa-envelope fa-2x"></i></a> 
             </div>
-            <!--<p>Lawyer | 1x AWS Certified |  AWS SheBuilds CloudUp | HTML | CSS</p>-->
+            <p class="text">Number of visitors: <span id="visits"></span></p>
         </div>
-        <br>
-        <div class="rightbar">
-            <div class="contactone">
-                <ul class="addy">
-                    <li>Toronto, Ontario |</li>
-                    <li>jenniferefika@outlook.com | </li>
-                    <li>905-922-6022</li>
-                </ul>
+        <!--<div class="arrow">
+            <div>
+                <span></span>
             </div>
-            <!--<div class="box">
-                <img src="/img/aws-certified-cloud-practitioner-badge.png" alt="My Cloud Practitioner badge">
-                <img src="/img/aws-cloud-quest-cloud-practitioner.png" alt="My Cloud Quest badge">-->
-                <!--<img src="/img/html5-original.svg" title="HTML5" alt="HTML Logo">
-                <img src="/img/python-original.svg" title="Python" alt="Python Logo">-->
-                <!--<div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>-->
-            <!--</div>-->
-            <p>This page has been visited <span id="visits"></span> times.</p>
-        </div>
+        </div>-->
+        <br>
     </div>
-    <div class="about"> 
-        <div class="nextdiv">
-            <div class="profile">Profile</div>
-            <p class="texttwo">A full-stack Javascript developer with a passion for cloud technologies. 
-                I am eager to work collaboratively, to provide improvements to the existing code base and to contribute to advancements in new features through highly effective front and back end design. 
-                I bring a unique combination of skills and work experience as I am licensed in two jurisdictions with several years of experience discharging legal responsibilities for the delivery of critical projects involving administrative law, human rights, social justice, service delivery, compliance, real estate, Electronic discovery and data production for litigation.  My background in law has allowed me 
-                to sharpen my soft skills in communication, analytical and critical thinking, time management and empathy, and I look forward to the opportunity to bring my experience and skills to your team.</p> 
-        </div>
-    </div>  
-    <div class="education">
-        <h2>Education</h2>
-        <p>
+ 
+    <!--<div class="education">
+        <h3>Professional Development Experience</h3>
+        <h3>Cloud Resume Challenge - October 2022</h3>
+        <h4>Amazon S3, Amazon CloudFront, Amazon Route 53, AWS DynamoDB, AWS SAM, AWS API Gateway, AWS ACM Certificate Manager, AWS Lambda, Github, HTML, CSS 
+        </h4>
+            <ul>
+                <li>Deployed a HTML/CSS resume as an Amazon S3 static website using the AWS Console</li>
+                <li>Configured HTTPS security for the website URL using AWS Certificate Manager(ACM) public certificate, Amazon CloudFront and OAI</li>
+                <li>Mapped the CloudFront distribution to this custom domain name - <a href="resume.olachiefika.com" target="_blank">resume.olachiefika.com</a></li>- from Route 53 using an alias record 
+                <li>Developed a Javascript snippet to call an API through the AWS API Gateway and a Lambda function to retrieve and update the visitor count in a DynamoDB database </li>
+                <li>Created a CI/CD workflow through Github Actions to sync files from front and back end local repositories to an S3 bucket after any updates</li>
+                <li>Defined DynamoDB Table, API Gateway and Lambda function using the AWS SAM template</li>
+                <li>Troubleshooting and resolving issues in development, test and production instances</li>
+            </ul>
+        <h3>Skills</h3>
+        <h4>Amazon Web Services</h4>
+            <ul>
+                <li>Compute: EC2, Lambda, Elastic Beanstalk</li>
+                <li>Storage: EBS, S3</li>
+                <li>Database: RDS, DynamoDB</li>
+                <li>Networking & Content Delivery: VPC, CloudFront, Route 53, API Gateway</li>
+                <li>Security,Identity, & Compliance: IAM, Cognito</li>
+                <li>Management & Governance: AWS Organizations, CloudWatch, CloudFormation, Cloud Trial, AWS Config, AWS Systems Manager</li>
+            </ul>
+        <h3>Languages & Web Development tools</h3>
+            <ul>
+                <li>HTML | CSS | Python | Javascript | Git/Github | Jira |  Linux and Shell Scripting | Amazon Web Services</li>
+            </ul>
+        <h3>Volunteering Activities</h3>
+            <ul>
+                <li>Created a web application to optimize client acquisition and retention for a small business --><!--Add Seun's link here--> </li>
+              <!--  <li>Part of the Community Volunteer Income Tax Program specifically assisting newcomers to file tax returns in Canada</li>
+            </ul>
+        <h3>Education</h3>
             <ul>
                 <li>2022 - The Odin Project - Web Development</li>
                 <li>2022 - SheBuilds CloudUp Program</li>
@@ -67,39 +191,6 @@
                 <li>2012 - Member of the Nigerian Bar (Barrister & Solicitor of the Supreme Court of Nigeria)</li>
                 <li>2012 - Nigerian Law School, Nigeria: BL, Barrister at Law</li>
                 <li>2010 - Madonna University, Nigeria: LLB, Bachelor of Laws</li>
-            </ul>
-        </p>
-        <h2>Professional Development Experience</h2>
-        <h3>Cloud Resume Challenge - October 2022</h3>
-        <h4>Amazon S3, Amazon CloudFront, Amazon Route 53, AWS DynamoDB, AWS SAM, AWS API Gateway, AWS ACM Certificate Manager, AWS Lambda, Github, HTML, CSS 
-        </h4>
-            <ul>
-                <li>Deployed a HTML/CSS resume as an Amazon S3 static website using the AWS Console</li>
-                <li>Configured HTTPS security for the website URL using AWS Certificate Manager(ACM) public certificate, Amazon CloudFront and OAI</li>
-                <li>Mapped the CloudFront distribution to a custom domain name from Route 53 using an alias record <a href="resume.olachiefika.com" target="_blank"></a></li>
-                <li>Developed a Javascript snippet to call an API through the AWS API Gateway and a Lambda function to retrieve and update the visitor count in a DynamoDB database </li>
-                <li>Created a CI/CD workflow through Github Actions to sync files from front and back end local repositories to an S3 bucket after any updates</li>
-                <li>Defined DynamoDB Table, API Gateway and Lambda function using the AWS SAM template</li>
-                <li>Troubleshooting and resolving issues in development, test and production instances</li>
-            </ul>
-        <h2>Skills</h2>
-        <h3>AWS</h3>
-            <ul>
-                <li>Compute:    EC2, Lambda, Elastic Beanstalk</li>
-                <li>Storage:    EBS, S3</li>
-                <li>Database:   RDS, DynamoDB</li>
-                <li>Networking & Content Delivery: VPC, CloudFront, Route 53, API Gateway</li>
-                <li>Security,Identity, & Compliance: IAM, Cognito</li>
-                <li>Management & Governance: AWS Organizations, CloudWatch, CloudFormation, Cloud Trial, AWS Config, AWS Systems Manager</li>
-            </ul>
-        <h3>Languages & Web Development tools</h3>
-            <ul>
-                <li>HTML | CSS | Python | Javascript | Git/Github | Jira |  Linux and Shell Scripting | Amazon Web Services</li>
-            </ul>
-        <h2>Volunteering Activities</h2>
-            <ul>
-                <li>Created this web application to optimize client acquisition and retention for a small business site<!--Add Seun's link here--> for a small business</li>
-                <li>Part of the Community Volunteer Income Tax Program specifically assisting newcomers to file tax returns in Canada</li>
             </ul>
     </div> 
     <div class="thirdcontainer">
@@ -125,7 +216,12 @@
     </div>
 
     <div class="footer">
-      Copyright © Olachi Efika 2022 
-    </div> 
+      <p class="text">Copyright © Olachi Efika 2022 </p>
+      <p class="text">Toronto, Ontario | jenniferefika@outlook.com | 905-922-6022</p>
+    </div>-->
 </body>
 </html>
+
+    
+    
+  
