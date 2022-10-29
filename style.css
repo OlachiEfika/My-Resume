@@ -6,6 +6,7 @@ body {
   font-family: 'Raleway', sans-serif;
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .head {
@@ -21,19 +22,21 @@ body {
     padding: 20px;
 }
 
-.sidebar {
+/*.sidebar {
     flex-shrink: 0;
     padding: 16px;
-    width: 200px;
+    width: 40px;
     background: #79747a;
     text-decoration: none;
-  }
+    justify-content: center;
+    align-items: center;
+  }*/
 
 .container {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    width:100%;
+    
   }
   
 .card {
@@ -58,6 +61,11 @@ body {
   flex-direction: column;
 }
 
+.textone{ 
+    font-size: 50px;
+    color: #416352;
+
+}
 .profilebar{
     font-weight: bold;
     font-size: 18px;
@@ -69,6 +77,7 @@ body {
     align-items: center;
 }
 
+
 .social{
     display: inline-flex;
     list-style: none;
@@ -79,9 +88,11 @@ body {
     font-size: 18px;
     font-weight: bold;
 }
+
 .text {
     color: rgba(156, 136, 136, 0.733);
 }
+
 img {
     width: 150px;
     height: 150px;
@@ -117,7 +128,6 @@ h2 {
     padding: 100px;
     gap: 10px;
     height: 200px;
-    
 }
 
 .fourthcontainer {
@@ -127,7 +137,7 @@ h2 {
     flex-direction: row;
     padding: 50px;
     background: #009999;
-    width: 400px;
+    width: 345px;
     height: 70px;
     border-radius: 8px;
     color: white;

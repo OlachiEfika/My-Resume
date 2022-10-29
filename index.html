@@ -12,43 +12,34 @@
 </head>
 <body>
     <div class="head">
-        <div class="sidebar">
-          <ul>
-            <li><a href="#"> - link one</a></li>
-            <li><a href="#"> - link two</a></li>
-            <li><a href="#"> - link three</a></li>
-            <li><a href="#"> - link four</a></li>
-          </ul>
-        </div>
+        <!--<div class="sidebar">
+            <a href="https://github.com/OlachiEfika" target="_blank"> <i class="fa fa-github fa-2x"></i></a>
+            <a href="https://www.linkedin.com/in/olachi-efika-65b07627" target="_blank"> <i class="fa fa-linkedin fa-2x"></i></a>
+            <a href="mailto:jenniferefika@outlook.com" target="_blank"> <i class="fa fa-envelope fa-2x"></i></a> 
+        </div>-->
         <div class="container">
             <div class="headone">
-                <div class="menu">
-                    <button>
-                        <span>
-                            <i></i>
-                        </span>
-                    </button>
-                </div>
-                <h1 class="text">OLACHI EFIKA</h1>
+                <img src="/img/profilepic.jpg" alt="My profile picture">
+                <div class="textone"><h1 class="textone">OLACHI EFIKA</h1></div>
                 <div class="social">
-                    <a href="https://github.com/OlachiEfika" target="_blank"> <i class="fa fa-github fa-2x"></i></a>
-                    <a href="https://www.linkedin.com/in/olachi-efika-65b07627" target="_blank"> <i class="fa fa-linkedin fa-2x"></i></a></i>
-                    <a href="mailto:jenniferefika@outlook.com" target="_blank"> <i class="fa fa-envelope fa-2x"></i></a> 
+                    <a href="https://github.com/OlachiEfika" target="_blank"> <i class="fa fa-github fa-3x"></i></a>
+                    <a href="https://www.linkedin.com/in/olachi-efika-65b07627" target="_blank"> <i class="fa fa-linkedin fa-3x"></i></a>
+                    <a href="mailto:jenniferefika@outlook.com" target="_blank"> <i class="fa fa-envelope fa-3x"></i></a> 
                 </div>
-                <p class="text">Number of visitors: <span id="visits"></span></p>
+                
             </div>
             
             <div class="card">
                 <div class="profilebar">
-                    <img src="/img/profilepic.jpg" alt="My profile picture">
-                    <p class="text">Hello! I am an aspiring full-stack developer with a passion for cloud technologies.  
+                    <div class="texttwo">Hello! I am an aspiring full-stack developer with a passion for cloud technologies.  
                         I bring a unique combination of skills and work experience with a background in law which has allowed me 
                         to sharpen my soft skills in communication, analytical and critical thinking, time management and empathy.
                         I have a passion for learning, solving problems and building solutions with technology.
-                    </p>
-                    <p class="text">My current goals are to learn and seek opportunities in the field of  web development, cloud engineering, and DevOps practices.</p>
-                    <p class="text">This resume website is the result of my learning from The Odin Project and AWS resources, I attempted the <a href="https://cloudresumechallenge.dev/docs/the-challenge/aws/" target="_blank">Cloud Resume Challenge</a></li>. </p>
-                </div></div>
+                    </div>
+                    <div class="texttwo">My current goals are to learn and seek opportunities in the field of  web development, cloud engineering, and DevOps practices.</div>
+                    <div class="texttwo">This resume website is the result of my learning from The Odin Project and AWS resources, I attempted the <a href="https://cloudresumechallenge.dev/docs/the-challenge/aws/" target="_blank">Cloud Resume Challenge</a></li>. </div>
+                </div>
+            </div>
             <div class="card"><h3>Professional Development Experience</h3>
                 <h3>Cloud Resume Challenge - October 2022</h3>
                 <h4>Amazon S3, Amazon CloudFront, Amazon Route 53, AWS DynamoDB, AWS SAM, AWS API Gateway, AWS ACM Certificate Manager, AWS Lambda, Github, HTML, CSS 
@@ -56,7 +47,7 @@
                     <ul>
                         <li>Deployed a HTML/CSS resume as an Amazon S3 static website using the AWS Console</li>
                         <li>Configured HTTPS security for the website URL using AWS Certificate Manager(ACM) public certificate, Amazon CloudFront and OAI</li>
-                        <li>Mapped the CloudFront distribution to this custom domain name - <a href="resume.olachiefika.com" target="_blank">resume.olachiefika.com</a></li>- from Route 53 using an alias record 
+                        <li>Mapped the CloudFront distribution to this custom domain name (resume.olachiefika.com) from Route 53 using an alias record 
                         <li>Developed a Javascript snippet to call an API through the AWS API Gateway and a Lambda function to retrieve and update the visitor count in a DynamoDB database </li>
                         <li>Created a CI/CD workflow through Github Actions to sync files from front and back end local repositories to an S3 bucket after any updates</li>
                         <li>Defined DynamoDB Table, API Gateway and Lambda function using the AWS SAM template</li>
@@ -95,8 +86,8 @@
             <div class="card"><div class="thirdcontainer">
                 <h2>Certifications</h2>
                 <div class="certs">
-                    <img src="/img/aws-certified-cloud-practitioner-badge.png" alt="My Cloud Practitioner badge">
-                    <img src="/img/aws-cloud-quest-cloud-practitioner.png" alt="My Cloud Quest badge">
+                    <a href="https://www.credly.com/badges/dc4124c6-b9e0-459f-a99a-11eefc091073/public_url" target="_blank"><img src="/img/aws-certified-cloud-practitioner-badge.png" alt="My Cloud Practitioner badge"></a>
+                    <a href="https://www.credly.com/badges/2ae2025c-24c1-4d7b-808f-fe588161fa5f/public_url" target="_blank"><img src="/img/aws-cloud-quest-cloud-practitioner.png" alt="My Cloud Quest badge"></a>
                 </div>
                 <div class="firsttext"> “For the things we have to learn before we can do them, we learn by doing them.”</div>
                 <div class="moretext"> - Aristotle!</div>
@@ -117,108 +108,11 @@
             <div class="footer">
                 <p class="text">Copyright © Olachi Efika 2022 </p>
                 <p class="text">Toronto, Ontario | jenniferefika@outlook.com | 905-922-6022</p>
+                <p class="text">Number of visitors: <span id="visits"></span></p>
             </div> 
         </div>
-      
-    <!--<div class="head">
-        <div class="header">
-            <div class="profilebar">
-                <img src="/img/profilepic.jpg" alt="My profile picture">
-                <h1 class="text">OLACHI EFIKA</h1>
-                <p class="text">Hello! I am an aspiring full-stack developer with a passion for cloud technologies.  
-                    I bring a unique combination of skills and work experience with a background in law which has allowed me 
-                    to sharpen my soft skills in communication, analytical and critical thinking, time management and empathy.
-                    I have a passion for learning, solving problems and building solutions with technology.
-                </p>
-                <p class="text">My current goals are to learn and seek opportunities in the field of  web development, cloud engineering, and DevOps practices.</p>
-                <p class="text">This resume website is the result of my learning from The Odin Project and AWS resources, I attempted the <a href="https://cloudresumechallenge.dev/docs/the-challenge/aws/" target="_blank">Cloud Resume Challenge</a></li>. </p>
-            </div>
-            <div class="social">
-                <a href="https://github.com/OlachiEfika" target="_blank"> <i class="fa fa-github fa-2x"></i></a>
-                <a href="https://www.linkedin.com/in/olachi-efika-65b07627" target="_blank"> <i class="fa fa-linkedin fa-2x"></i></a></i>
-                <a href="mailto:jenniferefika@outlook.com" target="_blank"> <i class="fa fa-envelope fa-2x"></i></a> 
-            </div>
-            <p class="text">Number of visitors: <span id="visits"></span></p>
-        </div>
-        <!--<div class="arrow">
-            <div>
-                <span></span>
-            </div>
-        </div>-->
-        <br>
+       <br>
     </div>
- 
-    <!--<div class="education">
-        <h3>Professional Development Experience</h3>
-        <h3>Cloud Resume Challenge - October 2022</h3>
-        <h4>Amazon S3, Amazon CloudFront, Amazon Route 53, AWS DynamoDB, AWS SAM, AWS API Gateway, AWS ACM Certificate Manager, AWS Lambda, Github, HTML, CSS 
-        </h4>
-            <ul>
-                <li>Deployed a HTML/CSS resume as an Amazon S3 static website using the AWS Console</li>
-                <li>Configured HTTPS security for the website URL using AWS Certificate Manager(ACM) public certificate, Amazon CloudFront and OAI</li>
-                <li>Mapped the CloudFront distribution to this custom domain name - <a href="resume.olachiefika.com" target="_blank">resume.olachiefika.com</a></li>- from Route 53 using an alias record 
-                <li>Developed a Javascript snippet to call an API through the AWS API Gateway and a Lambda function to retrieve and update the visitor count in a DynamoDB database </li>
-                <li>Created a CI/CD workflow through Github Actions to sync files from front and back end local repositories to an S3 bucket after any updates</li>
-                <li>Defined DynamoDB Table, API Gateway and Lambda function using the AWS SAM template</li>
-                <li>Troubleshooting and resolving issues in development, test and production instances</li>
-            </ul>
-        <h3>Skills</h3>
-        <h4>Amazon Web Services</h4>
-            <ul>
-                <li>Compute: EC2, Lambda, Elastic Beanstalk</li>
-                <li>Storage: EBS, S3</li>
-                <li>Database: RDS, DynamoDB</li>
-                <li>Networking & Content Delivery: VPC, CloudFront, Route 53, API Gateway</li>
-                <li>Security,Identity, & Compliance: IAM, Cognito</li>
-                <li>Management & Governance: AWS Organizations, CloudWatch, CloudFormation, Cloud Trial, AWS Config, AWS Systems Manager</li>
-            </ul>
-        <h3>Languages & Web Development tools</h3>
-            <ul>
-                <li>HTML | CSS | Python | Javascript | Git/Github | Jira |  Linux and Shell Scripting | Amazon Web Services</li>
-            </ul>
-        <h3>Volunteering Activities</h3>
-            <ul>
-                <li>Created a web application to optimize client acquisition and retention for a small business --><!--Add Seun's link here--> </li>
-              <!--  <li>Part of the Community Volunteer Income Tax Program specifically assisting newcomers to file tax returns in Canada</li>
-            </ul>
-        <h3>Education</h3>
-            <ul>
-                <li>2022 - The Odin Project - Web Development</li>
-                <li>2022 - SheBuilds CloudUp Program</li>
-                <li>2021 - Member of the Law Society of Ontario: Barrister & Solicitor</li>
-                <li>2020 - Federation of Law Societies Canada: National Committee on Accreditation - Certification of Qualification</li>
-                <li>2014 - University of Birmingham, UK: LLM, Master of Laws (LLM Project: An Analysis of UK and EU Patent frameworks)</li>
-                <li>2012 - Member of the Nigerian Bar (Barrister & Solicitor of the Supreme Court of Nigeria)</li>
-                <li>2012 - Nigerian Law School, Nigeria: BL, Barrister at Law</li>
-                <li>2010 - Madonna University, Nigeria: LLB, Bachelor of Laws</li>
-            </ul>
-    </div> 
-    <div class="thirdcontainer">
-        <h2>Certifications</h2>
-        <div class="certs">
-            <img src="/img/aws-certified-cloud-practitioner-badge.png" alt="My Cloud Practitioner badge">
-            <img src="/img/aws-cloud-quest-cloud-practitioner.png" alt="My Cloud Quest badge">
-        </div>
-        <div class="firsttext"> “For the things we have to learn before we can do them, we learn by doing them.”</div>
-        <div class="moretext"> - Aristotle!</div>
-    </div>
-    
-    <div class="fourthcontainer">
-        <div class="sep">
-            <div class="firstquote">Let's connect!</div>
-            <div class="secondquote"> Contact me by clicking these buttons below.</div>
-        </div>  
-        <div class="contactme">
-            <a href="mailto:jenniferefika@outlook.com" target="_blank"> <i class="fa fa-envelope fa-3x"></i></a> 
-            <a href="https://github.com/OlachiEfika" target="_blank"> <i class="fa fa-github fa-3x"></i></a>
-            <a href="https://www.linkedin.com/in/olachi-efika-65b07627" target="_blank"> <i class="fa fa-linkedin fa-3x"></i></a>  
-        </div>
-    </div>
-
-    <div class="footer">
-      <p class="text">Copyright © Olachi Efika 2022 </p>
-      <p class="text">Toronto, Ontario | jenniferefika@outlook.com | 905-922-6022</p>
-    </div>-->
 </body>
 </html>
 

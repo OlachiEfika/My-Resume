@@ -17,4 +17,10 @@ jobs:
       - name: Upload files to S3 with AWS CLI
         run: |
           aws s3 sync . s3://ola-cloud-resume --follow-symlinks --delete --exclude '.git/*' --exclude '.github/*'
+      
+      - name: Invalidate CloudFront
+        uses: chetan/invalidate-cloudfront-action@v2
+        env:
+        DISTRIBUTION: ${{ secrets.DISTRIBUTION }}
+        PATHS: "/*"
        
