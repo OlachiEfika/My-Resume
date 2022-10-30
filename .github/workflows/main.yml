@@ -19,11 +19,11 @@ jobs:
           aws s3 sync . s3://ola-cloud-resume --follow-symlinks --delete --exclude '.git/*' --exclude '.github/*'
       
       - name: Invalidate CloudFront
-        uses: chetan/invalidate-cloudfront-action@v2
+        uses: chetan/invalidate-cloudfront-action@v1.3
         env:
-        DISTRIBUTION: ${{ secrets.DISTRIBUTION }}
-        PATHS: "/*"
-        AWS_REGION: ca-central-1
-        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }
+          DISTRIBUTION: ${{ secrets.DISTRIBUTION }}
+          PATHS: "/*"
+          AWS_REGION: ca-central-1
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }
        
