@@ -14,7 +14,7 @@ function updateCounter(){
       throw new Error('something went wrong');
     }
   })
-  .then(data => document.getElementById("hits").innerText = data.Visit_Count)
+  .then(data => document.getElementById("visitor_counter").innerHTML = data.visitor_counter)
 }
 </script>
-    Visits: <span id="hits"></span>
+Number of Visitors: <span id="hits"></span>
