@@ -146,7 +146,7 @@ h2 {
     color: white;
     align-items: center;
     justify-content: center;
-    animation: move-in-steps 10s steps(3) infinite;
+    animation: move-in-steps 10s steps(2) infinite;
     display: inline-block;
     position: relative;
 }
