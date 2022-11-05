@@ -8,6 +8,7 @@ body {
   flex-direction: column;
   width: 100%;
   flex-shrink: 0;
+  background-color: rgb(214, 243, 241);
 }
 
 .head {
@@ -18,11 +19,17 @@ body {
     display: flex;
     background: #131422;
     align-items: center;
-    justify-content: space-around;
-    padding: 20px;
+    justify-content: flex-start;
+    padding: 25px;
     flex-shrink: 0;
+    gap: 30px;
 }
 
+.textone{ 
+  font-size: 50px;
+  color: #416352;
+  display: flex;
+}
 /*.sidebar {
     flex-shrink: 0;
     padding: 16px;
@@ -42,12 +49,12 @@ body {
 .card {
     padding: 16px;
     margin: 16px;
-    border: 1px solid #eee;
-    box-shadow: 2px 4px 16px rgba(0,0,0,.06);
+    border: 2px solid rgb(108, 168, 158);
+    box-shadow: 2px 4px 16px rgba(20, 20, 20, 0.06);
     border-radius: 4px;
   }
 
-.header{
+/*.header{
   display: flex;
   justify-content: center;
   padding: 16px;
@@ -58,13 +65,8 @@ body {
   text-align: center;
   font-size: 18px;
   flex-direction: column;
-}
+}*/
 
-.textone{ 
-    font-size: 50px;
-    color: #416352;
-
-}
 .profilebar{
     font-weight: bold;
     font-size: 18px;
@@ -86,10 +88,12 @@ body {
     margin-left: 10px;
     font-size: 18px;
     font-weight: bold;
+    flex-direction: column;
 }
 
 .text {
-    color: rgba(156, 136, 136, 0.733);
+    color: #416352;
+
 }
 
 img {
@@ -120,12 +124,11 @@ h2 {
 
 .thirdcontainer {
     display: flex;
-    background-color: #E5E7EB;
+    background-color: #f5f6f8;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 100px;
-    gap: 10px;
+    padding: 80px;
     height: 200px;
     flex-shrink: 0;
 }
@@ -136,27 +139,20 @@ h2 {
     margin: 20px;
     flex-direction: row;
     padding: 50px;
-    background: #009999;
-    width: 345px;
+    background: #143030;
+    width: 900px;
     height: 70px;
-    border-radius: 8px;
-    color: white;
-    align-items: center;
-    justify-content: center;
-    animation: move-in-steps 10s steps(2) infinite;
-    display: inline-block;
-    position: relative;
+    border-radius: 20px;
+    color:#f5f6f8;
+    justify-content: space-around;
+    animation: example;
+    animation-duration: 15s;
+    margin-left: 120px;
 }
 
-@keyframes move-in-steps {
-    0% {
-      left: 0;
-      background:#79747a;
-    }
-    100% {
-      left: 100%;
-      background: rgb(65, 31, 75);
-    }
+@keyframes example {
+    from {background-color:#2d4139;}
+    to {background-color: rgb(37, 83, 61);}
   }
 
 .firstquote {
@@ -168,6 +164,7 @@ h2 {
 .contactme {
     display:flex;
     gap: 20px;
+    flex-direction: row;
 }
 
 .contact{
@@ -189,7 +186,7 @@ h2 {
   justify-content: center;
   padding: 15px;
   background: #131422;
-  color: rgba(156, 136, 136, 0.733);
+  color: #416352;
   align-items: center;
   flex-direction: row;
   font-weight: bold;
