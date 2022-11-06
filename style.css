@@ -8,28 +8,106 @@ body {
   flex-direction: column;
   width: 100%;
   flex-shrink: 0;
-  background-color: rgb(214, 243, 241);
+  background-color: rgb(182, 189, 189);
 }
 
 .head {
-    display: flex;
+  display: flex;
 }
 
 .headone{
     display: flex;
-    background: #131422;
+    background:	rgb(46, 80, 80);
     align-items: center;
     justify-content: flex-start;
-    padding: 25px;
+    padding: 10px;
     flex-shrink: 0;
     gap: 30px;
 }
 
-.textone{ 
-  font-size: 50px;
-  color: #416352;
+.navbar {
+  background-color: rgb(93, 119, 104);
+  font-family: Arial;
   display: flex;
+  cursor: pointer;
+  margin-left: 350px;
+  border-radius: 7px;
 }
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: rgb(69, 102, 95);
+}
+
+.dropdown-content {
+  display: none;
+  position: inherit;
+  background-color:rgb(154, 180, 180);
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(20, 20, 19, 0.2);
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  list-style: none;
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(70, 110, 129);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.textone{ 
+  font-size: 60px;
+  color: rgb(202, 189, 154);
+  display: flex;
+  font-family: "Saira Extra Condensed", "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  margin-left: 90px;
+  justify-content: center;
+  align-items: center;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 30px;
+  height: 3px;
+  background-color: rgb(233, 227, 227);
+  margin: 10px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
 /*.sidebar {
     flex-shrink: 0;
     padding: 16px;
@@ -49,9 +127,10 @@ body {
 .card {
     padding: 16px;
     margin: 16px;
-    border: 2px solid rgb(108, 168, 158);
+    border: 2px solid rgb(98, 112, 110);
     box-shadow: 2px 4px 16px rgba(20, 20, 20, 0.06);
     border-radius: 4px;
+    background-color: white;
   }
 
 /*.header{
@@ -83,7 +162,6 @@ body {
     display: inline-flex;
     list-style: none;
     gap: 12px;
-    color: black;
     text-decoration: none;
     margin-left: 10px;
     font-size: 18px;
@@ -91,10 +169,9 @@ body {
     flex-direction: column;
 }
 
-.text {
-    color: #416352;
-
-}
+/*.text {
+    color: black;
+}*/
 
 img {
     width: 150px;
@@ -109,7 +186,7 @@ p {
 
 a{
     text-decoration: none;
-    color: #416352;
+    color:  rgb(202, 189, 154);
 }
 
 h2 {
@@ -117,14 +194,12 @@ h2 {
     justify-content: flex-start;
     align-items: flex-start;
     font-weight: bolder;
-    color: black;
     font-size: 30px;
     margin-left: 30px;
 }
 
 .thirdcontainer {
     display: flex;
-    background-color: #f5f6f8;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -133,26 +208,36 @@ h2 {
     flex-shrink: 0;
 }
 
+.split{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+hr{
+  width: 400px;
+}
 .fourthcontainer {
     display: flex;
-    background: white;
     margin: 20px;
     flex-direction: row;
-    padding: 50px;
+    padding: 30px;
     background: #143030;
-    width: 900px;
-    height: 70px;
+    width: 70%;
+    height: 100px;
     border-radius: 20px;
-    color:#f5f6f8;
+    color:rgb(126, 125, 125);
     justify-content: space-around;
+    align-items: center;
     animation: example;
-    animation-duration: 15s;
-    margin-left: 120px;
+    animation-duration: 5s;
+    
 }
 
 @keyframes example {
-    from {background-color:#2d4139;}
-    to {background-color: rgb(37, 83, 61);}
+    from {background-color:#335c68;}
+    to {background-color: rgb(59, 91, 99);}
   }
 
 .firstquote {
@@ -160,11 +245,10 @@ h2 {
     font-weight: bold;
 }
 
-
 .contactme {
     display:flex;
-    gap: 20px;
-    flex-direction: row;
+    gap: 10px;
+    flex-direction: row;   
 }
 
 .contact{
@@ -175,9 +259,8 @@ h2 {
     height: 36px;
     font-weight: bold;
     font-size: 18px;
-    color: white;
     display: flex;
-    flex-direction: row;
+  
 }
 
 
@@ -185,13 +268,16 @@ h2 {
   display: flex;
   justify-content: center;
   padding: 15px;
-  background: #131422;
-  color: #416352;
+  background: #00242e;
   align-items: center;
   flex-direction: row;
   font-weight: bold;
   height: 40px;
   gap: 30px;
+}
+
+.text {
+  color:rgb(211, 210, 210);
 }
 
 
