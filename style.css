@@ -8,42 +8,48 @@ body {
   flex-direction: column;
   width: 100%;
   flex-shrink: 0;
-  background-color: rgb(182, 189, 189);
+  background-color: rgb(220, 233, 233);
 }
 
-.head {
+.head{
   display: flex;
 }
 
 .headone{
     display: flex;
-    background:	rgb(46, 80, 80);
+    background:	rgb(28, 44, 53);
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     padding: 10px;
     flex-shrink: 0;
-    gap: 30px;
+    /*gap: 30px;*/
 }
 
+
 .navbar {
-  background-color: rgb(93, 119, 104);
+  background-color: rgb(46, 79, 97);
   font-family: Arial;
   display: flex;
   cursor: pointer;
-  margin-left: 350px;
+  /*margin-left: 325px;*/
   border-radius: 7px;
 }
 
 .navbar a {
   float: left;
   font-size: 16px;
-  color: white;
+  font-weight: bold;
+  font-family:'Raleway', sans-serif;
+  color: rgb(5, 5, 5);
   text-align: center;
-  padding: 14px 16px;
+  padding: 12px 16px;
   text-decoration: none;
 }
 
-.dropdown {
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: rgb(53, 78, 73);
+}
+/*.dropdown {
   float: left;
   overflow: hidden;
 }
@@ -56,14 +62,11 @@ body {
   padding: 14px 16px;
   background-color: inherit;
   font-family: inherit; /* Important for vertical align on mobile phones */
-  margin: 0; /* Important for vertical align on mobile phones */
-}
+  /*margin: 0; }/* Important for vertical align on mobile phones */
 
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: rgb(69, 102, 95);
-}
 
-.dropdown-content {
+
+/*.dropdown-content {
   display: none;
   position: inherit;
   background-color:rgb(154, 180, 180);
@@ -87,36 +90,37 @@ body {
 
 .dropdown:hover .dropdown-content {
   display: block;
-}
+}*/
 
 .textone{ 
   font-size: 60px;
   color: rgb(202, 189, 154);
   display: flex;
   font-family: "Saira Extra Condensed", "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  margin-left: 90px;
+  /*margin-left: 90px;
   justify-content: center;
-  align-items: center;
+  align-items: center;*/
 }
 
-.bar1, .bar2, .bar3 {
+/*.bar1, .bar2, .bar3 {
   width: 30px;
   height: 3px;
   background-color: rgb(233, 227, 227);
   margin: 10px;
   justify-content: flex-end;
   align-items: center;
-}
+}*/
 
-/*.sidebar {
+.sidebar {
     flex-shrink: 0;
     padding: 16px;
-    width: 40px;
-    background: #79747a;
+    width: 150px;
+    background:rgb(159, 167, 167);
     text-decoration: none;
-    justify-content: center;
-    align-items: center;
-  }*/
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+  }
 
 .container {
     display: flex;
@@ -129,7 +133,7 @@ body {
     margin: 16px;
     border: 2px solid rgb(98, 112, 110);
     box-shadow: 2px 4px 16px rgba(20, 20, 20, 0.06);
-    border-radius: 4px;
+    border-radius: 10px;
     background-color: white;
   }
 
@@ -163,10 +167,9 @@ body {
     list-style: none;
     gap: 12px;
     text-decoration: none;
-    margin-left: 10px;
     font-size: 18px;
     font-weight: bold;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 /*.text {
@@ -186,7 +189,7 @@ p {
 
 a{
     text-decoration: none;
-    color:  rgb(202, 189, 154);
+    color:  rgb(0, 0, 0);
 }
 
 h2 {
@@ -220,35 +223,35 @@ hr{
 }
 .fourthcontainer {
     display: flex;
-    margin: 20px;
-    flex-direction: row;
-    padding: 30px;
-    background: #143030;
-    width: 70%;
-    height: 100px;
-    border-radius: 20px;
-    color:rgb(126, 125, 125);
-    justify-content: space-around;
+    /*margin: 20px;*/
+    flex-direction: column;
+    /*padding: 2px;*/
+    background:  rgb(46, 79, 97);
+    width: 100%;
+    height: 400px;
+    border-radius: 5px;
+    color:rgb(5, 5, 5);
+    justify-content: space-evenly;
     align-items: center;
     animation: example;
-    animation-duration: 5s;
-    
+    animation-duration: 10s;
 }
 
 @keyframes example {
-    from {background-color:#335c68;}
-    to {background-color: rgb(59, 91, 99);}
+    from {background-color:#051616;}
+    to {background-color: rgb(95, 148, 161);}
   }
 
 .firstquote {
-    font-size: 23px;
+    font-size: 20px;
     font-weight: bold;
+    color: #000;
 }
 
 .contactme {
     display:flex;
     gap: 10px;
-    flex-direction: row;   
+    flex-direction: column;   
 }
 
 .contact{
@@ -258,7 +261,7 @@ hr{
     width: 140px;
     height: 36px;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 16px;
     display: flex;
   
 }
@@ -268,7 +271,7 @@ hr{
   display: flex;
   justify-content: center;
   padding: 15px;
-  background: #00242e;
+  background:rgb(28, 44, 53);
   align-items: center;
   flex-direction: row;
   font-weight: bold;
@@ -277,7 +280,7 @@ hr{
 }
 
 .text {
-  color:rgb(211, 210, 210);
+  color:rgb(202, 189, 154);
 }
 
 
