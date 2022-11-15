@@ -5,18 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta content="minimum-scale=1.0, maximum-scale=1.0, width=device-width, user-scalable=no" name="viewport">
     <title>My Resume</title>
     <link rel="stylesheet" href="./style.css">
     <script src="https://use.fontawesome.com/0d3d015e02.js"></script>
     <script async src="https://api.countapi.xyz/hit/olachiefika.github.io/d10d0618-9f4d-40f7-accb-00f06400ce66?callback=websiteVisits"></script>
-    <script src="myscripts.js"></script>
+    <script defer src="myscripts.js"></script>
 </head>
 <body>
     <div class="head">
         <div class="sidebar">
-            <div><img src="/img/profilepic.jpg" alt="My profile picture"></div>
-            
+            <div class="wrapimg">
+                <div><img src="/img/profilepic.jpg" alt="My profile picture" width="130" height="130"></div>
+            </div>
             <div class="navbar">
                 <div><nav></nav></div>
                 <nav>
@@ -33,42 +33,50 @@
                 <a href="https://www.linkedin.com/in/olachi-efika-65b07627" target="_blank"> <i class="fa fa-linkedin fa-2x"></i></a>
                 <a href="mailto:jenniferefika@outlook.com" target="_blank"> <i class="fa fa-envelope fa-2x"></i></a> 
             </div>-->
+            
             <div class="fourthcontainer">
                 <div class="sep">
                     <div class="firstquote">Let's connect!</div>
                     <!--<div class="secondquote"> Contact me by clicking those buttons over there.</div>-->
                 </div>  
                 <div class="contactme">
-                    <a href="mailto:jenniferefika@outlook.com" target="_blank"> <i class="fa fa-envelope fa-3x"></i></a> 
-                    <a href="https://github.com/OlachiEfika" target="_blank"> <i class="fa fa-github fa-3x"></i></a>
-                    <a href="https://www.linkedin.com/in/olachi-efika-65b07627" target="_blank"> <i class="fa fa-linkedin fa-3x"></i></a>  
+                    <a href="mailto:jenniferefika@outlook.com" target="_blank"> <i class="fa fa-envelope fa-2x"></i></a> 
+                    <a href="https://github.com/OlachiEfika" target="_blank"> <i class="fa fa-github fa-2x"></i></a>
+                    <a href="https://www.linkedin.com/in/olachi-efika-65b07627" target="_blank"> <i class="fa fa-linkedin fa-2x"></i></a>  
                 </div>
             </div>
+            </nav>
         </div>
+        
         <div class="container">
             <div class="headone">
-                <!--<div class="social">
-                    <a href="https://github.com/OlachiEfika" target="_blank"> <i class="fa fa-github fa-2x"></i></a>
-                    <a href="https://www.linkedin.com/in/olachi-efika-65b07627" target="_blank"> <i class="fa fa-linkedin fa-2x"></i></a>
-                    <a href="mailto:jenniferefika@outlook.com" target="_blank"> <i class="fa fa-envelope fa-2x"></i></a> 
-                </div>-->
-                <!--<div><img src="/img/profilepic.jpg" alt="My profile picture"></div>-->
-                <div class="textone"><h1 class="textone">OLACHI EFIKA</h1></div>
-                    
+                <div class="textone"><h1 class="texts">OLACHI EFIKA</h1></div>    
             </div>
+            
         <section class="about" id="about">
             <div class="card">
                 <div class="profilebar">
-                    <div class="texttwo">Hello! I am an aspiring full-stack developer with a passion for cloud technologies.  
+                    <div class="texttwo">
+                        <script>
+                            var greet = "Hello World!";
+                            document.write(greet); // Prints: Hello World!
+                        </script> 
+                        I am an aspiring full-stack developer with a passion for cloud technologies.  
                         I bring a unique combination of skills and work experience with a background in law which has allowed me 
                         to sharpen my soft skills in communication, problem solving, analytical and critical thinking.
                         I have a passion for learning, solving problems and building solutions with technology.
                     </div>
-                    <div class="texttwo">My current goals are to learn and seek opportunities in the field of  web development, cloud engineering, and DevOps practices.</div>
-                    <div class="texttwo">This resume website is the result of my learning from The Odin Project and AWS resources, I attempted the <a href="https://cloudresumechallenge.dev/docs/the-challenge/aws/" target="_blank">Cloud Resume Challenge</a></li>. </div>
+                    <div class="texttwo">My current goals are to learn and seek opportunities in the field of  web development, cloud computing, and DevOps practices.</div>
+                    <div class="texttwo">This resume website is my attempt at the <a href="https://cloudresumechallenge.dev/docs/the-challenge/aws/" target="_blank">Cloud Resume Challenge</a>. I was able to do so as a result of my learning from The Odin Project and AWS resources.</div>
                 </div>
-            </div>
+            </div>  
+        
+            <!--<div class="download">
+                <div class="resume">DOWNLOAD MY RESUME</div>
+                <div class="portfolio">VIEW PORTFOLIO</div>
+            </div>-->
         </section>
+        
         <section class="experience" id="experience">
             <div class="card"><h3>Professional Development Experience</h3>
                 <h3>Cloud Resume Challenge - October 2022</h3>
@@ -93,20 +101,22 @@
                         <li>Database: RDS, DynamoDB</li>
                         <li>Networking & Content Delivery: VPC, CloudFront, Route 53, API Gateway</li>
                         <li>Security,Identity, & Compliance: IAM, Cognito</li>
-                        <li>Management & Governance: AWS Organizations, CloudWatch, CloudFormation, Cloud Trial, AWS Config, AWS Systems Manager</li>
+                        <li>Management & Governance: AWS Organizations, CloudWatch, CloudFormation, Cloud Trail, AWS Config, AWS Systems Manager</li>
                     </ul></div>
         </section>   
         <section class="language" id="language">       
             <div class="card"><h3>Languages & Web Development tools</h3>
                 <ul>
-                    <li>HTML | CSS | Python | Javascript | Git/Github | Jira |  Linux and Shell Scripting | Amazon Web Services</li>
-                </ul></div>
+                    <li>HTML | CSS | Python | Javascript | Git/Github | Jira |  Linux and Shell Scripting | Amazon Web Services </li>
+                </ul>
+            </div>
         </section>  
             <div class="card"><h3>Volunteering Activities</h3>
                 <ul>
                     <li>Created a web application to optimize client acquisition and retention for a small business <!--Add Seun's link here--> </li>
                     <li>Part of the Community Volunteer Income Tax Program specifically assisting newcomers to file tax returns in Canada</li>
-                </ul></div>
+                </ul>
+            </div>
         <section class="education" id="education"> 
             <div class="card"><h3>Education</h3>
                 <ul>
@@ -118,7 +128,8 @@
                     <li>2012 - Member of the Nigerian Bar (Barrister & Solicitor of the Supreme Court of Nigeria)</li>
                     <li>2012 - Nigerian Law School, Nigeria: BL, Barrister at Law</li>
                     <li>2010 - Madonna University, Nigeria: LLB, Bachelor of Laws</li>
-                </ul></div>
+                </ul>
+            </div>
         </section> 
         <section class="certifications" id="certifications">      
             <div class="card">
@@ -132,29 +143,38 @@
                         <hr>
                         <div class="firsttext"> “For the things we have to learn before we can do them, we learn by doing them.”</div>
                         <div class="moretext"> - Aristotle!</div>
-                        
                     </div>    
                 </div>
             </div>
-        </section>     
+        </section>   
+        <div class="download">
+            <div class="resume">
+                <a href=".pdf" class="btn btn--download"> DOWNLOAD MY RESUME </a> 
+            </div>
+            <div class="portfolio">
+               <a href="https://github.com/OlachiEfika" target="_blank">VIEW PORTFOLIO</a>
+            </div>
+        </div> 
             <div class="footer">
                 <p class="text">Copyright © Olachi Efika 2022 </p>
                 <p class="text">Toronto, Ontario | jenniferefika@outlook.com | 905-922-6022</p>
-                <p class="text">Number of visitors: <span id="hits"></span></p>
-                <p class="counter"> Visitors count: </p>
+                <p class="text">Number of visitors: <span id="body"></span></p>
                 <p id ="body"></p>
-            
                 <script type = "text/javascript">
-                    var apiUrl = "https://vamzxh0jag.execute-api.ca-central-1.amazonaws.com/prod";
+                    let apiUrl = "https://vamzxh0jag.execute-api.ca-central-1.amazonaws.com/prod";
                         fetch(apiUrl)
                         .then(response => response.json())
                         .then(data =>{
-                    var count = document.getElementById('body');
+                    let myString = JSON.stringify(data);  
+                    let theString = myString.substr(16,3)      
+                    let count = document.getElementById("body").innerHTML = theString;
+                    
                     count.innerHTML = data.body;
                     console.log(data)});
-            </script>
+                </script>
+                
             </div> 
-            <div>
+            <!--<div>
                 <script>
                     function updateCounter(){
                         fetch('https://vamzxh0jag.execute-api.ca-central-1.amazonaws.com/prod',{
@@ -172,9 +192,8 @@
                       })
                       .then(data => document.getElementById("hits").innerHTML = data.visitor_counter)
                     }
-                    </script>
-                    
-            </div>
+                    </script> 
+            </div>-->
 
         </div>
        <br>
