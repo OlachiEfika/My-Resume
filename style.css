@@ -1,16 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
+html {
+  
+}
+
 body {
   min-height: 100vh;
   font-family: 'Raleway', sans-serif;
   display: flex;
   width: 100%;
-  flex-basis: auto;
-  background-color:  #424252;
+  background-color:  #858591;
+  flex-direction: column;
 }
 
-.head{
+.top{
   display: flex;
+  
+  /*overflow: scroll;*/
 }
 
 .headone{
@@ -93,7 +99,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: 29px;
-  top:0;
   justify-content: flex-start;
 }
 
@@ -243,6 +248,10 @@ hr{
   font-weight: bold;
   height: 40px;
   gap: 30px;
+  position: sticky;
+  bottom: 0;
+  top: 0;
+  left: 0;
 }
 
 .text {
