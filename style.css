@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
-html {
-  
-}
 
 body {
   min-height: 100vh;
@@ -248,10 +245,6 @@ hr{
   font-weight: bold;
   height: 40px;
   gap: 30px;
-  position: sticky;
-  bottom: 0;
-  top: 0;
-  left: 0;
 }
 
 .text {
