@@ -1,18 +1,28 @@
+
+
+
+# You can now execute commands that use the credentials👇
+#- name: Serverless deploy
+#  run: sls deploy --stage dev
+
 name: Sync to S3
 on: [push]
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    permissions:
+      id-token: write # required to use OIDC authentication
+      contents: read # required to checkout the code from the repo
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2.3.4
       
-      - name: Configure AWS Credentials
+      - name: configure aws credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: ca-central-1
+          role-to-assume: ${{ secrets.AWS_ROLE }}
+          role-duration-seconds: 900 # the ttl of the session, in seconds.
+          aws-region: ca-central-1 # use your region here.
 
       - name: Upload files to S3 with AWS CLI
         run: |
@@ -24,6 +34,6 @@ jobs:
           DISTRIBUTION: ${{ secrets.DISTRIBUTION }}
           PATHS: "/*"
           AWS_REGION: ca-central-1
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          #AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          #AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
        
