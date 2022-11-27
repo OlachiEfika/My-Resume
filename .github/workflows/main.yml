@@ -30,6 +30,10 @@ jobs:
       
       - name: Invalidate CloudFront
         uses: chetan/invalidate-cloudfront-action@v1.3
+        with:
+          role-to-assume: ${{ secrets.AWS_ROLE }}
+          role-duration-seconds: 900 # the ttl of the session, in seconds.
+          aws-region: ca-central-1 # use your region here.
         env:
           DISTRIBUTION: ${{ secrets.DISTRIBUTION }}
           PATHS: "/*"
