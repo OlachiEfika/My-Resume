@@ -25,6 +25,7 @@
                         <a href="#experience">Experience</a>
                         <a href="#skills">Skills</a>
                         <a href="#language">Languages</a>
+                        <a href="#training">Training</a>
                         <a href="#education">Education</a>
                         <a href="#certifications">Certifications</a>
                     </nav>
@@ -46,7 +47,14 @@
                 <div class="headone">
                     <div class="textone"><h1 class="texts">OLACHI EFIKA</h1></div>    
                 </div>
-            
+                <div class="download">
+                    <div class="resume">
+                        <a href="devresume.pdf" class="btn btn--download" target="_blank"> DOWNLOAD MY RESUME </a> 
+                    </div>
+                    <div class="portfolio">
+                        <a href="https://github.com/OlachiEfika" target="_blank">VIEW PORTFOLIO</a>
+                    </div>
+                </div> 
                 <section class="about" id="about">
                     <div class="card">
                         <div class="profilebar">
@@ -55,13 +63,12 @@
                                     var greet = "Hello World!";
                                     document.write(greet); // Prints: Hello World!
                                 </script> 
-                                I am an aspiring full-stack developer with a passion for cloud technologies.  
-                                I bring a unique combination of skills and work experience with a background in law which has allowed me 
-                                to sharpen my soft skills in communication, problem solving, analytical and critical thinking.
+                                I am a DevOps Engineer with hands-on experience architecting and automating deployments of infrastructure on AWS leveraging CI/CD, configuration management, and DevOps practices.  
+                                I bring a unique combination of skills and work experience with a background in law and legal research which has helped me sharpen my curiosity, problem-solving, analytical and critical thinking skills.  
                                 I have a passion for learning, solving problems and building solutions with technology.
                             </div>
-                            <div class="texttwo">My current goals are to learn and seek opportunities in the field of  web development, cloud computing, and DevOps practices.</div>
-                            <div class="texttwo">This resume website is my attempt at the <a href="https://cloudresumechallenge.dev/docs/the-challenge/aws/" target="_blank">Cloud Resume Challenge</a>. I was able to do so as a result of my learning from The Odin Project and AWS resources.</div>
+                            <div class="texttwo">My current goals are continuous learning and to seek opportunities in the field of  cloud computing and DevOps practices.</div>
+                            <div class="texttwo">This resume website is my attempt at the <a href="https://cloudresumechallenge.dev/docs/the-challenge/aws/" target="_blank">Cloud Resume Challenge</a>. I was able to do so as a result of my learning from The Odin Project and the SheBuilds CloudUp Program.</div>
                         </div>
                     </div>  
         
@@ -69,8 +76,8 @@
         
                 <section class="experience" id="experience">
                     <div class="card"><h3>Professional Development Experience</h3>
-                        <h3>Cloud Resume Challenge - October 2022</h3>
-                        <h4>Amazon S3, Amazon CloudFront, Amazon Route 53, AWS DynamoDB, AWS SAM, AWS API Gateway, AWS ACM Certificate Manager, AWS Lambda, Github, HTML, CSS 
+                        <h3>Cloud Resume Challenge - 2022</h3>
+                        <h4>Skills - Amazon S3, CloudFront, Route 53, DynamoDB, AWS SAM, AWS API Gateway, ACM Certificate Manager, AWS Lambda, Git Bash, Github, GitHub Actions, HTML, CSS 
                         </h4>
                         <ul>
                             <li>Deployed a HTML/CSS resume as an Amazon S3 static website using the AWS Console</li>
@@ -78,9 +85,10 @@
                             <li>Mapped the CloudFront distribution to this custom domain name (resume.olachiefika.com) from Route 53 using an alias record 
                             <li>Developed a Javascript snippet to call an API through the AWS API Gateway and a Lambda function to retrieve and update the visitor count in a DynamoDB database </li>
                             <li>Created front and backend repositories on Github for source control</li>
-                            <li>Created a CI/CD workflow through Github Actions to sync files from front and back end local repositories to an S3 bucket after any updates</li>
+                            <li>Setup a CI/CD workflow through Github Actions to sync files from front and back end local repositories to an S3 bucket after any updates</li>
+                            <li>Created an IAM role with web identity provider details to create temporary OIDC credentials for security hardening on GitHub Actions</li>
                             <li>Defined DynamoDB Table, API Gateway and Lambda function using the AWS SAM template</li>
-                            <li>Troubleshooting and resolving issues in development, test and production instances</li>
+                            <li>Troubleshooting and resolving issues</li>
                         </ul>
                     </div>
                 </section> 
@@ -89,20 +97,33 @@
                     <div class="card"><h3>Skills</h3>
                         <h4>Amazon Web Services</h4>
                         <ul>
-                            <li>Compute: EC2, Lambda, Elastic Beanstalk</li>
+                            <li>Compute: EC2, Lambda</li>
+                            <li>Containers: ECS, EKS</li>
                             <li>Storage: EBS, S3</li>
                             <li>Database: RDS, DynamoDB</li>
-                            <li>Networking & Content Delivery: VPC, CloudFront, Route 53, API Gateway</li>
+                            <li>Networking & Content Delivery: VPC, CloudFront, Route 53, API Gateway, ACM </li>
                             <li>Security,Identity, & Compliance: IAM, Cognito</li>
-                            <li>Management & Governance: AWS Organizations, CloudWatch, CloudFormation, Cloud Trail, AWS Config, AWS Systems Manager</li>
+                            <li>Management & Governance: AWS Organizations, CloudWatch, CloudFormation, Cloud Trail, AWS Config</li>
                         </ul>
                     </div>
                 </section>   
 
                 <section class="language" id="language">       
-                    <div class="card"><h3>Languages & Web Development tools</h3>
+                    <div class="card"><h3>Languages & tools</h3>
                         <ul>
-                            <li>HTML | CSS | Python | Javascript | Git/Github | Jira |  Linux and Shell Scripting | Amazon Web Services </li>
+                            <li>OS: Windows | Linux </li>
+                            <li>Version Control: GitHub </li>
+                            <li>Cloud: AWS </li>
+                            <li>Build & Package management: Git | Maven</li>
+                            <li>Config management & Deployment: Ansible</li>
+                            <li>Containerization: Docker | DockerHub | Kubernetes | ECS | EKS </li>
+                            <li>Build Automation & CI/CD: Jenkins | GitHub Actions </li>
+                            <li>Infrastructure as Code: Terraform | CloudFormation </li>
+                            <li>Scripting: Python, Bash </li>
+                            <li>Languages: HTML | CSS | Python | JavaScript </li>
+                            <li>Issue tracking: Jira  </li>
+                            <li>Terminals: Git Bash | PowerShell | Command Prompt | AWS CLI </li>
+                            <li>Virtualization: Oracle VM | Vagrant | CentOS | Ubuntu </li>                           
                         </ul>
                     </div>
                 </section>  
@@ -114,20 +135,27 @@
                     </ul>
                 </div>
 
-                <section class="education" id="education"> 
-                    <div class="card"><h3>Education</h3>
+                <section class="training" id="training"> 
+                    <div class="card"><h3>Training</h3>
                         <ul>
-                            <li>2022 - The Odin Project - Web Development</li>
+                            <li>2022 - Decoding DevOps with projects - VisualPath</li>
+                            <li>2022 - The Odin Project - Full stack JavaScript</li>
                             <li>2022 - SheBuilds CloudUp Program</li>
                             <li>2022 - PY4E - Python For Everybody</li>
                             <li>2022 - Getting started with Git and GitHub - IBM Skills Network</li>
                             <li>2022 - Introduction to Linux Commands and Shell Scripting</li>
                             <li>2022 - Jira Fundamentals - Atlassian</li>
                             <li>2022 - Amazon Web Services - Cloud Practitioner Essentials</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="education" id="education"> 
+                    <div class="card"><h3>Education</h3>
+                        <ul>
                             <li>2021 - Member of the Law Society of Ontario: Barrister & Solicitor</li>
                             <li>2020 - Federation of Law Societies Canada: National Committee on Accreditation - Certification of Qualification</li>
                             <li>2014 - University of Birmingham, UK: LLM, Master of Laws (LLM Project: An Analysis of UK and EU Patent frameworks)</li>
-                            <li>2012 - Member of the Nigerian Bar (Barrister & Solicitor of the Supreme Court of Nigeria</li>
                             <li>2012 - Nigerian Law School, Nigeria: BL, Barrister at Law</li>
                         </ul>
                     </div>
@@ -149,15 +177,6 @@
                         </div>
                     </div>
                 </section>  
-
-                <div class="download">
-                    <div class="resume">
-                        <a href="myresume.pdf" class="btn btn--download"> DOWNLOAD MY RESUME </a> 
-                    </div>
-                    <div class="portfolio">
-                        <a href="https://github.com/OlachiEfika" target="_blank">VIEW PORTFOLIO</a>
-                    </div>
-                </div> 
 
                 <div class="footer">
                     <p class="text">Copyright © Olachi Efika 2022 </p>
